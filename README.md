@@ -18,7 +18,7 @@ You can view a csv version my tidy data set [here](https://github.com/rac/cleani
 - `tidyDataset.txt` and `tidyDataset.csv` are created in the `PROJECT` directory. If you `cd` to the `PROJECT` directory you can run `ls -l` and see that
 	both `tidyDataset.txt` and `tidyDataset.csv` have been updated.
 
-* I completed this project using a Mac and instructions may vary if you are using a different operating system
+*I completed this project using a Mac and instructions may vary if you are using a different operating system
 
 
 
