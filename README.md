@@ -17,6 +17,8 @@ You can view a csv version my tidy data set [here](https://github.com/rac/cleani
 5. Run `source("run_analysis.R")` to create the tidy data set.
 6. `tidyDataset.txt` and `tidyDataset.csv` are created in the `PROJECT` directory. If you `cd` to the `PROJECT` directory you can run `ls -l` and see that
 	both `tidyDataset.txt` and `tidyDataset.csv` have been updated.
+7. In the RStudio console you will now have access to both the `meanDataSet` data.frame used to write the `tidyDataset.txt` and `tidyDataset.csv` as well as 
+	the `tidyData` data.frame that was used to create the `meanDataSet`.
 
 \**I completed this project using a Mac and instructions may vary if you are using a different operating system*
 
