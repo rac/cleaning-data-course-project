@@ -122,4 +122,4 @@ meanDataSet <- buildMeanDataSet(tidyData)
 write.table(meanDataSet, file="tidyDataset.txt", row.names=FALSE)
 
 # write csv file with row names for easy viewing on Github
-write.table(meanDataSet, file="tidyDataset.csv", row.names=FALSE)
+write.csv(meanDataSet, file="tidyDataset.csv", row.names=FALSE)
