@@ -8,19 +8,32 @@ A description of the study can be found [here](http://archive.ics.uci.edu/ml/dat
 
 ## Study Design
 
-Using the README.txt found in the UCI HAR Dataset 
+1. Find the column names for all features using the `features.txt` file.
+2. Find the standard deviation and mean columns using the data from step 1.
+3. Tidy the column names from step 1 and 2 by removing superfluous characters and lowercasing all characters.
+4. Make the column names from step 1 and 2 more descriptive by replacing "acc" with "acceleration". I found the other abbreviations clear enough.
+5. Find the activity labels from `activity_labels.txt`.
+6. Tidy the activity labels from step 5 by removing the underscore and lowercasing the characters.
+7. Get the subject IDs from the `./test/subject_test.txt` file
+8. Apply the activity labels from step 6 to the ids found in `./test/y_test.txt`
+9. Get the measurements from the `./test/X_test.txt` while applying the column names from step 1.
+10. Find the standard deviation and mean columns with date from step 9 using the column names from step 2
+11. Create a data.frame by combining the subjects from step 7, activities from step 8 and measurements from step 10.
+12. Repeat steps 7-11 using the data from `./train` directory
+13. Combine the train and test data.frames
+14. melt the data using the "subjectId" and "activity" columns and cast them back using the mean function
 
 ## Variables
 
 ### Column 1
 
-Subject IDs ranging from 1-30. Obtained from the 'test/subject_test.txt' and the 'train/subject_train.txt'
+Subject IDs ranging from 1-30.
 
 - subjectId
 
 ### Column 2
 
-Description of the activity the subject was performing while the measurement was taken. The activity labels were obtained from the 'activity_labels.txt' and 
+Description of the activity the subject was performing (walking, walkingupstairs, walkingdownstairs, sitting, standing, laying) while the measurement was taken. 
 transformed into tidy column names by removing the underscore and lowercasing all characters.
 
 - activity
