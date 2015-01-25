@@ -2,7 +2,7 @@
 
 ## Author James Maloney
 
-## This script is broken down into functions that perform independent tasks. The first function is called on line 112
+## This script is broken down into functions that perform independent tasks. The first function is called on line 113
 
 #' downloadData downloads the UCI HAR Dataset if missing. The dirName argument is the directory inside
 #'
