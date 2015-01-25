@@ -23,6 +23,9 @@ A description of the study can be found [here](http://archive.ics.uci.edu/ml/dat
 13. Combine the train and test data.frames
 14. melt the data using the "subjectId" and "activity" columns and cast them back using the mean function
 
+
+\**Note: gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean like fields where excluded since additional "averaging" was performed on this data*
+
 ## Variables
 
 ### Column 1
@@ -40,7 +43,13 @@ transformed into tidy column names by removing the underscore and lowercasing al
 
 ### Columns 3-68
 
-Tidy variable names from the 'features.txt'.
+A prefix of 't' denotes time data
+
+A Prefix of 'f' denotes frequency domain signals
+
+A Suffix of x, y or z is used to denote 3-axial signals in the X, Y and Z directions.
+
+The mag abbreviation stands for magnitude
 
 - `tbodyaccelerationmeanx` Contains the mean of: `tBodyAcc-mean()-X`
 - `tbodyaccelerationmeany` Contains the mean of: `tBodyAcc-mean()-Y`
